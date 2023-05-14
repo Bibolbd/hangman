@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="item-1">
+        <div id="flex-container">
+            <div class="gif">
+                <img src="assets/giphy.gif" alt="gif">
+            </div>
+            <div class="start">
+                <h1>We love hanging!</h1>
+                <p>If you want to play click "NEW GAME"</p>
+                <input type="button" id="start" value="NEW GAME" onclick="slide()">
+            </div>
+        </div> 
+    </div>
+    <div id="item-2">
+        <div id="chance"></div>
+        <div class="question-answer">
+            <input type="text" id="question" placeholder="Question">
+            <button class="material-symbols-outlined" onclick="createQuestion()">restart_alt</button>
+        </div>
+        <div id="hang">
+            <img id="image">    
+        </div>
+        <input type="text" id="answer">
+        <div id="alphabets">
+            <button value="A" id="a" onclick="checkAnswer('A')">A</button>
+            <button value="B" id="b" onclick="checkAnswer('B')">B</button>
+            <button value="C" id="c" onclick="checkAnswer('C')">C</button>
+            <button value="D" id="d" onclick="checkAnswer('D')">D</button>
+            <button value="E" id="e" onclick="checkAnswer('E')">E</button>
+            <button value="F" id="f" onclick="checkAnswer('F')">F</button>
+            <button value="G" id="g" onclick="checkAnswer('G')">G</button>
+            <button value="H" id="h" onclick="checkAnswer('H')">H</button>
+            <button value="I" id="i" onclick="checkAnswer('I')">I</button>
+            <button value="J" id="j" onclick="checkAnswer('J')">J</button>
+            <button value="K" id="k" onclick="checkAnswer('K')">K</button>
+            <button value="L" id="l" onclick="checkAnswer('L')">L</button>
+            <button value="M" id="m" onclick="checkAnswer('M')">M</button>
+            <button value="N" id="n" onclick="checkAnswer('N')">N</button>
+            <button value="O" id="o" onclick="checkAnswer('O')">O</button>
+            <button value="P" id="p" onclick="checkAnswer('P')">P</button>
+            <button value="Q" id="q" onclick="checkAnswer('Q')">Q</button>
+            <button value="R" id="r" onclick="checkAnswer('R')">R</button>
+            <button value="S" id="s" onclick="checkAnswer('S')">S</button>
+            <button value="T" id="t" onclick="checkAnswer('T')">T</button>
+            <button value="U" id="u" onclick="checkAnswer('U')">U</button>
+            <button value="V" id="v" onclick="checkAnswer('V')">V</button>
+            <button value="W" id="w" onclick="checkAnswer('W')">W</button>
+            <button value="X" id="x" onclick="checkAnswer('X')">X</button>
+            <button value="Y" id="y" onclick="checkAnswer('Y')">Y</button>
+            <button value="Z" id="z" onclick="checkAnswer('Z')">Z</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
